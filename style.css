@@ -1,0 +1,223 @@
+body {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 200px 350px 50px 450px 50px 350px 50px 500px 50px 400px 50px 550px 350px 200px 750px 500px 400px 450px 500px;
+    grid-column-gap: 25px;
+    font-family: calibre;
+}
+
+header {
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -1em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: url(afbeeldingen/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    margin-top: 6vw;
+    margin-left: 2em;
+}
+
+#kop1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 3em;
+}
+
+#kop2 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+#kop3 {
+    grid-column-start: 2;
+    grid-row-start: 10;
+}
+
+#kop4 {
+    grid-column-start: 2;
+    grid-row-start: 12;
+}
+
+#kop5 {
+    grid-column-start: 2;
+    grid-row-start: 14;
+}
+
+#kop6 {
+    grid-column-start: 2;
+    grid-row-start: 16;
+}
+
+#kop7 {
+    grid-column-start: 2;
+    grid-row-start: 17;
+}
+
+#kop8 {
+    grid-column-start: 2;
+    grid-row-start: 18;
+}
+
+#kop9 {
+    grid-column-start: 2;
+    grid-row-start: 19;
+}
+
+video {
+    grid-column-start: 3;
+    grid-row-start: 16;
+    width: 240px;
+    border: solid black 1px;
+    margin-left: 10em;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 200;
+}
+
+#typoAf {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#beeldAf {
+    grid-row-start: 7;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#gridAf {
+    grid-column-start: 2;
+    grid-row-start: 13;
+    grid-column-end: 4;
+}
+
+#interfaceAf {
+    grid-column-start: 2;
+    grid-row-start: 15;
+    grid-column-end: 4;
+}
+
+#web-ani {
+    grid-column-start: 3;
+    grid-row-start: 18;
+    margin-left: 5em;
+}
+
+#cor {
+    grid-column-start: 3;
+    grid-row-start: 19;
+}
+
+img {
+    width: 500px;
+}
+
+img:hover {
+    animation: scale .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.half {
+    width: 250px;
+}
+
+.derde {
+    width: 350px;
+}
+
+img[alt="beeldRechts"] {
+    grid-row-start: 5;
+    grid-column-start: 3;
+}
+
+img[alt="typoRechts"] {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    margin-left: 7em;
+    margin-top: 4em;
+}
+
+img[alt="boekje"] {
+    margin-top: 1.5em;
+}
+
+img[alt="foto"] {
+    margin-left: 3.5em;
+}
+
+#boekjeLook {
+    grid-row-start: 10;
+    grid-column-start: 3;
+}
+
+#style {
+    grid-column-start: 3;
+    grid-row-start: 12;
+    width: 350px;
+    margin-left: 5em;
+    margin-top: 5em;
+}
+
+img[alt="lookalikes"] {
+    border: solid 1px black;
+    width: 350px;
+    margin-left: 5em;
+}
+
+#web-typo {
+    grid-column-start: 3;
+    grid-row-start: 17;
+    margin-top: 3em;
+}
+
+img[alt="correspondent"] {
+    margin-left: 5em;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    background-color: #b20000;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 2em;
+    width: 2em;
+}
+
+#myBtn:hover {
+    background-color: #710000;
+}

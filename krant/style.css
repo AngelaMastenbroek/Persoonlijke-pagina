@@ -1,0 +1,168 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 250px 250px 250px 1fr;
+    grid-template-rows: 25px auto 20px;
+}
+
+h1,
+h2 {
+    font-family: Queens Park;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0em;
+    margin-bottom: .3em;
+    padding-top: .5em;
+    padding-left: .5em;
+}
+
+#liegen {
+    line-height: 17px;
+    font-size: 1.7em;
+}
+
+p {
+    font-family: Cardiff;
+    font-size: .5em;
+}
+
+.grow:hover {
+    animation: grow .5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+#tekst {
+    background-color: #bebebe;
+    padding: 1em;
+    margin: 0em;
+    line-height: 1.1em;
+}
+
+#graden {
+    max-width: 450px;
+    margin-top: -3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eerste {
+    max-width: 300px;
+    column-count: 2;
+}
+
+.tweede {
+    max-width: 150px;
+}
+
+.derde {
+    max-width: 150px;
+}
+
+.vierde {
+    max-width: 450px;
+    column-count: 4;
+}
+
+#regelEEN {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -4em;
+}
+
+img {
+    width: 250px;
+}
+
+#grafiek {
+    margin-left: 21em;
+    margin-top: -15em;
+    width: 14em;
+}
+
+#ouder {
+    margin-left: 12em;
+    margin-top: -14.5em;
+    height: 10em;
+}
+
+#as {
+    margin-top: -5em;
+    max-width: 325px;
+    height: 100px;
+    margin-left: 12.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+iframe {
+    margin-left: 9em;
+    margin-top: -5em;
+    width: 10em;
+    height: 6em;
+}
+
+#miljoen {
+    margin-left: 33em;
+    margin-top: -20em;
+}
+
+#nummers {
+    margin-left: 30em;
+    margin-top: -10em;
+    width: 14em;
+}
+
+#cijfers {
+    margin-top: -2.5em;
+}
+
+#jaar {
+    max-width: 558px;
+}
+
+#logo {
+    width: 350px;
+    margin-left: 260px;
+    margin-top: -6em;
+    margin-bottom: 1em;
+}
+
+#sanne {
+    background-color: #e6e6e6;
+    width: 6em;
+}
+
+section {
+    margin: 1em;
+    background-color: lightgray;
+}
+
+article {
+    background-color: lightgray;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+header p {
+    max-width: 150px;
+    margin: 1em;
+    margin-top: 5em;
+    font-size: .7em;
+    text-align: right;
+}

@@ -1,0 +1,811 @@
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto 700px auto;
+    grid-template-rows: 35% auto 35%;
+}
+
+@keyframes shake {
+
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.sound0 {
+    animation: shake .3s;
+}
+
+@keyframes pulse1 {
+
+    0%,
+    100% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: #790e0e;
+    }
+}
+
+@keyframes spike {
+
+    0%,
+    100% {
+        clip-path: polygon(67% 0, 75% 0, 86% 0, 100% 0, 100% 12%, 100% 30%, 100% 48%, 100% 61%, 100% 83%, 100% 100%, 91% 100%, 83% 100%, 76% 100%, 72% 100%, 63% 100%, 58% 100%, 49% 100%, 44% 100%, 36% 100%, 31% 100%, 23% 100%, 11% 100%, 0 100%, 0 85%, 0 70%, 0 55%, 0 39%, 0 21%, 0 0, 12% 0, 19% 0, 29% 0, 36% 0, 44% 0, 53% 0, 61% 0);
+    }
+
+    50% {
+        clip-path: polygon(67% 27%, 75% 14%, 78% 34%, 86% 20%, 85% 37%, 97% 39%, 87% 48%, 94% 59%, 84% 62%, 90% 76%, 80% 72%, 83% 90%, 73% 77%, 72% 91%, 63% 80%, 57% 93%, 47% 83%, 42% 95%, 34% 78%, 28% 91%, 24% 76%, 11% 88%, 17% 64%, 10% 66%, 18% 51%, 5% 45%, 19% 39%, 15% 25%, 25% 29%, 28% 14%, 34% 29%, 36% 8%, 42% 23%, 48% 10%, 53% 27%, 62% 14%);
+    }
+}
+
+.sound1 {
+    animation: pulse1 2s;
+}
+
+.sound1 iframe {
+    animation: spike 1.5s;
+}
+
+@keyframes pulse2 {
+
+    0%,
+    100% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: red;
+    }
+}
+
+.sound2 {
+    animation: pulse2 2s;
+}
+
+@keyframes pulse3 {
+    0% {
+        background-color: black;
+    }
+
+    80% {
+        background-color: #2e2e2e;
+    }
+
+    100% {
+        background-color: #f2f2f2;
+    }
+}
+
+.sound3 {
+    animation: schuif .5s;
+}
+
+@keyframes schuif {
+
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    0%,
+    40%,
+    80% {
+        transform: translate3d(0, -3px, 0);
+    }
+
+    20%,
+    60%,
+    100% {
+        transform: translate3d(0, 3px, 0);
+    }
+}
+
+@keyframes bobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(3deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes bobble2 {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(3deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+}
+
+.sound4,
+.sound6 iframe {
+    animation: bobble .2s cubic-bezier(0, 1, 1, .02) 1;
+}
+
+.sound5 {
+    animation: schuif .5s;
+}
+
+@keyframes schuif2 {
+
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    0%,
+    40%,
+    80% {
+        transform: translate3d(0, -3px, 0);
+    }
+
+    20%,
+    60%,
+    100% {
+        transform: translate3d(0, 3px, 0);
+    }
+}
+
+.sound7 {
+    animation: schuif2 .5s;
+}
+
+.sound8 iframe {
+    animation: bobble2 .2s cubic-bezier(0, 1, 1, .02) 1;
+}
+
+@keyframes mask2 {
+
+    0%,
+    100% {
+        clip-path: inset(59px 0px 57px 0px);
+    }
+
+    50% {
+        clip-path: inset(100px 100px 100px 100px);
+    }
+}
+
+.sound9 {
+    animation: pulse3 41s;
+}
+
+@keyframes pulse4 {
+
+    0%,
+    100% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: #101010;
+    }
+}
+
+.sound10 {
+    animation: pulse4 .3s;
+    animation-delay: 1s;
+    animation-iteration-count: 142;
+}
+
+.sound11 {
+    animation: flash .5s;
+}
+
+.sound11 iframe {
+    animation: mask2 .1s;
+    animation-delay: .3s;
+    animation-iteration-count: 2;
+}
+
+@keyframes flash {
+
+    from,
+    50%,
+    to {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0.5;
+    }
+}
+
+.sound12 iframe {
+    animation: size 30s 1 forwards;
+}
+
+@keyframes size {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+
+/****************************/
+
+#video-placeholder {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 700px;
+    clip-path: inset(60px 1px 55px 1px);
+}
+
+#closed-captions {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#closed-captions p {
+    opacity: 0;
+    transition: .05s;
+    position: absolute;
+    color: white;
+}
+
+#closed-captions .on {
+    opacity: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#closed-captions .off {
+    transition: .2s;
+    opacity: 0;
+}
+
+/* ************************ */
+
+.voice1 {
+    font-family: 'brenner mono';
+    font-weight: 200;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: -45em;
+    margin-top: 4em;
+}
+
+.voice2 {
+    font-family: 'brenner sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-left: -19em;
+    margin-top: 15em;
+}
+
+.voice3 {
+    font-family: 'brenner sans condensed';
+    font-weight: 800;
+    font-style: italic;
+}
+
+.voice4 {
+    font-family: 'brenner sans';
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.1em;
+    text-transform: lowercase;
+    margin-left: -38em;
+    margin-top: 5em;
+}
+
+/* ************************ */
+
+#closed-captions :nth-child(7) {
+    top: 16em;
+    left: 30%;
+}
+
+#closed-captions .on:nth-child(7) {
+    animation: schreeuw 1s;
+}
+
+@keyframes schreeuw {
+
+    0%,
+    100% {
+        font-size: 1em;
+    }
+
+    50% {
+        font-size: 1.5em;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+#closed-captions .on:nth-child(1) {
+    animation: typing 10s steps(120, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(2) {
+    margin-left: -28em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(3) {
+    animation: typing 3.5s steps(50, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(4) {
+    margin-left: -21em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(5) {
+    margin-left: -19em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(6) {
+    margin-left: -24em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(8) {
+    margin-left: -32em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(9) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(10) {
+    margin-left: -18.1em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(11) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(12) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(13) {
+    margin-left: -18.1em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(14) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(15) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(16) {
+    margin-left: -17.5em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(17) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(18) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(19) {
+    margin-left: -16.5em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(20) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(21) {
+    margin-left: -17.5em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(22) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(23) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(24) {
+    margin-left: -16.5em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(25) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(26) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(27) {
+    margin-left: -15em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(28) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(29) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(30) {
+    margin-left: -13em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(31) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(32) {
+    margin-left: -11.5em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(33) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(34) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(35) {
+    margin-left: -7em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(36) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(37) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(38) {
+    margin-left: -4em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(39) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(40) {
+    margin-left: -2em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(41) {
+    animation: typing 3s steps(40, end);
+    font-style: normal;
+    margin-left: -54em;
+}
+
+#closed-captions .on:nth-child(42) {
+    margin-left: 1em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(43) {
+    margin-left: 2em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(44) {
+    margin-left: 3em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(45) {
+    transition: none;
+}
+
+#closed-captions .on:nth-child(48) {
+    margin-left: -20em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(49) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(50) {
+    font-family: brenner slab;
+    margin-top: 16em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(51) {
+    animation: typing 3s steps(60, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(52) {
+    font-family: brenner slab;
+    margin-top: 16em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(53) {
+    animation: typing 3s steps(60, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(54) {
+    font-family: brenner slab;
+    margin-left: -17.5em;
+    margin-top: 16em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(55) {
+    animation: typing 3.5s steps(70, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(56) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(57) {
+    font-family: brenner slab;
+    margin-top: 16em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(58) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(59) {
+    font-family: brenner slab;
+    margin-top: 15.9em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(60) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(61) {
+    font-family: brenner slab;
+    margin-top: 15.9em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(62) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(63) {
+    font-family: brenner slab;
+    margin-top: 16.3em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(64) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(65) {
+    font-family: brenner slab;
+    margin-top: 16.8em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(66) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(67) {
+    font-family: brenner slab;
+    margin-top: 17em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(68) {
+    animation: typing 1s steps(10, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(69) {
+    font-family: brenner slab;
+    margin-top: 17em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(70) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(71) {
+    font-family: brenner slab;
+    margin-top: 17.4em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(72) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(73) {
+    font-family: brenner slab;
+    margin-top: 17.5em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(74) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(75) {
+    font-family: brenner slab;
+    margin-left: -5em;
+    margin-top: 17.9em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(76) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(77) {
+    font-family: brenner slab;
+    margin-top: 18em;
+    transition: none;
+}
+
+#closed-captions .on:nth-child(78) {
+    animation: typing 2s steps(40, end);
+    font-size: 1.3em;
+}
+
+#closed-captions .on:nth-child(79) {
+    margin-left: -21.5em;
+    transition: none;
+    font-family: brenner slab;
+    margin-top: 18em;
+}
+
+#closed-captions .on:nth-child(80) {
+    margin-top: 11.5em;
+    margin-left: -19.2em;
+    font-size: 1.8em;
+    transition: none;
+}
+
+/* **********************************************
+The first paragraph, with extended timing for
+    all siblings. Basically what it does is that
+    it shows the text after a delay, which
+    corresponds with the time that the word is
+    spoken.
+You probably want to change the styling.
+********************************************** */
