@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 200px 350px 50px 450px 50px 350px 50px 500px 50px 400px 50px 550px 350px 200px 750px 500px 400px 450px 500px;
+    grid-template-rows: 200px 350px 50px 450px 50px 350px 50px 500px 50px 400px 50px 550px 350px 200px 750px 500px 400px 450px 400px 60px 600px;
     grid-column-gap: 25px;
     font-family: calibre;
 }
@@ -25,6 +25,14 @@ header h1 {
     font-size: 3.5em;
     margin-top: 6vw;
     margin-left: 2em;
+}
+
+h3 {
+    grid-column-start: 2;
+    grid-row-start: 20;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 #kop1 {
@@ -199,6 +207,14 @@ img[alt="lookalikes"] {
 
 img[alt="correspondent"] {
     margin-left: 5em;
+}
+
+#groepfoto {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 21;
+    width: 60em;
+    margin-left: 4.05em;
 }
 
 #myBtn {
